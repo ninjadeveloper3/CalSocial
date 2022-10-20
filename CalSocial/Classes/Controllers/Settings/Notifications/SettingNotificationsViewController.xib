@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Muli-Regular.ttf">
+            <string>Muli-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingNotificationsViewController" customModule="Bizze" customModuleProvider="target">
+            <connections>
+                <outlet property="directMessages" destination="gE2-jF-z2H" id="tkf-YF-zA2"/>
+                <outlet property="eventNotifications" destination="Jbo-9e-5rs" id="1Z0-p1-oFA"/>
+                <outlet property="hiveNotifications" destination="Ehu-d4-wxr" id="GB5-Gl-dcR"/>
+                <outlet property="pauseAllNotifications" destination="kKI-Np-cq4" id="L9X-6j-8fu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pause all notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9x-dJ-yGV">
+                    <rect key="frame" x="20" y="74" width="311" height="25.5"/>
+                    <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="20"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kKI-Np-cq4">
+                    <rect key="frame" x="341" y="71.5" width="51" height="31"/>
+                    <connections>
+                        <action selector="pauseAllNotificationsChanged:" destination="-1" eventType="valueChanged" id="44C-AQ-utS"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Direct messages" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKA-Bn-2hY">
+                    <rect key="frame" x="56" y="159.5" width="279" height="20.5"/>
+                    <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="16"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gE2-jF-z2H">
+                    <rect key="frame" x="345" y="154.5" width="51" height="31"/>
+                    <connections>
+                        <action selector="directMessagesChanged:" destination="-1" eventType="valueChanged" id="vgy-CP-4Sl"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hive notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FC0-CE-bZE">
+                    <rect key="frame" x="56" y="223" width="279" height="20.5"/>
+                    <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="16"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ehu-d4-wxr">
+                    <rect key="frame" x="345" y="218" width="51" height="31"/>
+                    <connections>
+                        <action selector="hiveConnectionsChanged:" destination="-1" eventType="valueChanged" id="fsg-kI-QqS"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ikP-Wg-bOC">
+                    <rect key="frame" x="56" y="286.5" width="279" height="20.5"/>
+                    <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="16"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Jbo-9e-5rs">
+                    <rect key="frame" x="345" y="281.5" width="51" height="31"/>
+                    <connections>
+                        <action selector="eventNotificationsChanged:" destination="-1" eventType="valueChanged" id="GI6-rH-JLX"/>
+                    </connections>
+                </switch>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kKI-Np-cq4" secondAttribute="trailing" constant="24" id="2ia-IQ-Jj3"/>
+                <constraint firstItem="Jbo-9e-5rs" firstAttribute="centerY" secondItem="ikP-Wg-bOC" secondAttribute="centerY" id="5aY-jW-TPg"/>
+                <constraint firstItem="FC0-CE-bZE" firstAttribute="top" secondItem="jKA-Bn-2hY" secondAttribute="bottom" constant="43" id="Ah9-Kn-XKr"/>
+                <constraint firstItem="e9x-dJ-yGV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Asj-eM-ifr"/>
+                <constraint firstItem="gE2-jF-z2H" firstAttribute="centerY" secondItem="jKA-Bn-2hY" secondAttribute="centerY" id="DHh-Gx-W5f"/>
+                <constraint firstItem="ikP-Wg-bOC" firstAttribute="top" secondItem="FC0-CE-bZE" secondAttribute="bottom" constant="43" id="E6V-9R-GUG"/>
+                <constraint firstItem="Ehu-d4-wxr" firstAttribute="centerY" secondItem="FC0-CE-bZE" secondAttribute="centerY" id="KEu-GK-Lid"/>
+                <constraint firstItem="Ehu-d4-wxr" firstAttribute="leading" secondItem="FC0-CE-bZE" secondAttribute="trailing" constant="10" id="OiQ-1Z-KAq"/>
+                <constraint firstItem="e9x-dJ-yGV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="PIa-8A-Kh5"/>
+                <constraint firstItem="jKA-Bn-2hY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="56" id="PwO-dO-zmB"/>
+                <constraint firstItem="FC0-CE-bZE" firstAttribute="leading" secondItem="jKA-Bn-2hY" secondAttribute="leading" id="U1t-8y-tle"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Jbo-9e-5rs" secondAttribute="trailing" constant="20" id="aJp-X1-uvY"/>
+                <constraint firstItem="jKA-Bn-2hY" firstAttribute="top" secondItem="e9x-dJ-yGV" secondAttribute="bottom" constant="60" id="f0i-UX-GcR"/>
+                <constraint firstItem="gE2-jF-z2H" firstAttribute="leading" secondItem="jKA-Bn-2hY" secondAttribute="trailing" constant="10" id="nM3-CN-kFp"/>
+                <constraint firstItem="kKI-Np-cq4" firstAttribute="centerY" secondItem="e9x-dJ-yGV" secondAttribute="centerY" id="tvi-jr-aL1"/>
+                <constraint firstItem="ikP-Wg-bOC" firstAttribute="leading" secondItem="jKA-Bn-2hY" secondAttribute="leading" id="xXU-Ww-W0x"/>
+                <constraint firstItem="Jbo-9e-5rs" firstAttribute="leading" secondItem="ikP-Wg-bOC" secondAttribute="trailing" constant="10" id="zOp-tJ-xHe"/>
+                <constraint firstItem="kKI-Np-cq4" firstAttribute="leading" secondItem="e9x-dJ-yGV" secondAttribute="trailing" constant="10" id="zbI-ZC-OXS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ehu-d4-wxr" secondAttribute="trailing" constant="20" id="zgl-WY-t4W"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gE2-jF-z2H" secondAttribute="trailing" constant="20" id="zuy-fj-G4s"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

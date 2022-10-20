@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CanMakeItViewController" customModule="Bizze" customModuleProvider="target">
+            <connections>
+                <outlet property="maybeButton" destination="tLn-Yt-foW" id="Ohm-Bl-jEh"/>
+                <outlet property="noButton" destination="iH5-t2-6AA" id="hfq-Qh-QFp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="yesButton" destination="YW0-98-BgF" id="j6I-Wb-9aD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="12g-iA-ehM" customClass="HMView" customModule="Bizze" customModuleProvider="target">
+                    <rect key="frame" x="24" y="702" width="366" height="110"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can you make it?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUX-YY-MYk">
+                            <rect key="frame" x="112.5" y="16" width="141" height="22"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                            <color key="textColor" red="0.28232610229999999" green="0.28237068650000002" blue="0.2823119462" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iH5-t2-6AA" customClass="MBButton" customModule="Bizze" customModuleProvider="target">
+                            <rect key="frame" x="8" y="62" width="103.5" height="40"/>
+                            <color key="backgroundColor" red="0.43916493654251099" green="0.43924486637115479" blue="0.43915987014770508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="RMm-KR-QDV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
+                            <state key="normal" title="Can't Join">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="selectionButtonTapped:" destination="-1" eventType="touchUpInside" id="19q-uP-P5z"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLn-Yt-foW" customClass="MBButton" customModule="Bizze" customModuleProvider="target">
+                            <rect key="frame" x="131.5" y="62" width="103" height="40"/>
+                            <color key="backgroundColor" red="0.76464062929153442" green="0.76474910974502563" blue="0.76460641622543335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
+                            <state key="normal" title="Maybe">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="selectionButtonTapped:" destination="-1" eventType="touchUpInside" id="7uS-17-tNr"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YW0-98-BgF" customClass="MBButton" customModule="Bizze" customModuleProvider="target">
+                            <rect key="frame" x="254.5" y="62" width="103.5" height="40"/>
+                            <color key="backgroundColor" red="1" green="0.76166802644729614" blue="0.03414250910282135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
+                            <state key="normal" title="Join">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="selectionButtonTapped:" destination="-1" eventType="touchUpInside" id="GSv-m2-Blf"/>
+                            </connections>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="close-popup" translatesAutoresizingMaskIntoConstraints="NO" id="zm0-Gz-IcB">
+                            <rect key="frame" x="341" y="15" width="10" height="10"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="Tes-zz-Pct"/>
+                                <constraint firstAttribute="width" constant="10" id="dO0-I6-bpb"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNm-Fo-SIP">
+                            <rect key="frame" x="326" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="3Cq-wH-oTF"/>
+                                <constraint firstAttribute="height" constant="40" id="IvJ-q6-GJQ"/>
+                            </constraints>
+                            <connections>
+                                <action selector="cancelButtonTapped:" destination="-1" eventType="touchUpInside" id="sAq-g4-T65"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="iH5-t2-6AA" firstAttribute="leading" secondItem="12g-iA-ehM" secondAttribute="leading" constant="8" id="0oF-a0-I2X"/>
+                        <constraint firstItem="iH5-t2-6AA" firstAttribute="height" secondItem="tLn-Yt-foW" secondAttribute="height" id="7bE-xr-ROd"/>
+                        <constraint firstItem="tLn-Yt-foW" firstAttribute="leading" secondItem="iH5-t2-6AA" secondAttribute="trailing" constant="20" id="ApD-mF-Rsu"/>
+                        <constraint firstItem="tLn-Yt-foW" firstAttribute="width" secondItem="YW0-98-BgF" secondAttribute="width" id="Kuj-i2-UoC"/>
+                        <constraint firstItem="zm0-Gz-IcB" firstAttribute="top" secondItem="12g-iA-ehM" secondAttribute="top" constant="15" id="KxM-WM-q65"/>
+                        <constraint firstItem="tLn-Yt-foW" firstAttribute="height" secondItem="YW0-98-BgF" secondAttribute="height" id="YKY-tv-h9w"/>
+                        <constraint firstItem="YW0-98-BgF" firstAttribute="leading" secondItem="tLn-Yt-foW" secondAttribute="trailing" constant="20" id="Yes-ba-QT8"/>
+                        <constraint firstItem="tLn-Yt-foW" firstAttribute="centerY" secondItem="YW0-98-BgF" secondAttribute="centerY" id="aPl-3A-KgB"/>
+                        <constraint firstAttribute="height" constant="110" id="beO-lg-uM9"/>
+                        <constraint firstAttribute="trailing" secondItem="zm0-Gz-IcB" secondAttribute="trailing" constant="15" id="cMk-0o-knW"/>
+                        <constraint firstItem="tUX-YY-MYk" firstAttribute="top" secondItem="12g-iA-ehM" secondAttribute="top" constant="16" id="dNt-hd-0Aa"/>
+                        <constraint firstAttribute="bottom" secondItem="iH5-t2-6AA" secondAttribute="bottom" constant="8" id="ddF-AI-CS4"/>
+                        <constraint firstItem="iH5-t2-6AA" firstAttribute="width" secondItem="tLn-Yt-foW" secondAttribute="width" id="gkf-gX-SjF"/>
+                        <constraint firstAttribute="trailing" secondItem="dNm-Fo-SIP" secondAttribute="trailing" id="h6W-JV-HOh"/>
+                        <constraint firstItem="iH5-t2-6AA" firstAttribute="top" secondItem="tUX-YY-MYk" secondAttribute="bottom" constant="24" id="kD7-Bw-Sp1"/>
+                        <constraint firstItem="tUX-YY-MYk" firstAttribute="centerX" secondItem="12g-iA-ehM" secondAttribute="centerX" id="ndQ-II-q47"/>
+                        <constraint firstAttribute="trailing" secondItem="YW0-98-BgF" secondAttribute="trailing" constant="8" id="prc-UK-Gx3"/>
+                        <constraint firstItem="iH5-t2-6AA" firstAttribute="centerY" secondItem="tLn-Yt-foW" secondAttribute="centerY" id="x81-SL-L9e"/>
+                        <constraint firstItem="dNm-Fo-SIP" firstAttribute="top" secondItem="12g-iA-ehM" secondAttribute="top" id="xJS-zM-fb5"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.04789039481" green="0.04789039481" blue="0.04789039481" alpha="0.12775088030000001" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="0.0" height="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="12g-iA-ehM" secondAttribute="bottom" constant="50" id="8vb-Sl-oGB"/>
+                <constraint firstItem="12g-iA-ehM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9PE-qA-MZG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="12g-iA-ehM" secondAttribute="trailing" constant="24" id="NNf-Xk-W8K"/>
+                <constraint firstItem="12g-iA-ehM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="f7H-x3-IZd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="95.758928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close-popup" width="85" height="85"/>
+    </resources>
+</document>

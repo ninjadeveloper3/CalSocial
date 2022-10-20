@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Muli-Bold.ttf">
+            <string>Muli-Bold</string>
+        </array>
+        <array key="Muli-Regular.ttf">
+            <string>Muli-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SyncContactsViewController" customModule="Bizze" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="5tu-Pk-p1p">
+                    <rect key="frame" x="97" y="74" width="220" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="220" id="3R6-to-71f"/>
+                        <constraint firstAttribute="height" constant="70" id="e8g-rE-pfo"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To create events with your friends Bizee will need to access your contacts" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Oj-oB-uOX">
+                    <rect key="frame" x="40" y="204" width="334" height="40.5"/>
+                    <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="16"/>
+                    <color key="textColor" red="0.2352643311" green="0.2353112996" blue="0.2352613509" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uz7-F7-YHi" customClass="MBButton" customModule="Bizze" customModuleProvider="target">
+                    <rect key="frame" x="20" y="287.5" width="374" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.76078431369999999" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="haO-Cs-eGS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
+                    <state key="normal" title="Sync Contacts">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="syncContactButtonTapped:" destination="-1" eventType="touchUpInside" id="vQU-Zd-rp5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5S-dp-FIH">
+                    <rect key="frame" x="170.5" y="362.5" width="73" height="28"/>
+                    <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="12"/>
+                    <state key="normal" title="Skip for now">
+                        <color key="titleColor" red="0.31024876239999999" green="0.50069808959999995" blue="0.59679031370000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="skipButtonTapped:" destination="-1" eventType="touchUpInside" id="lM4-EK-m1T"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="B5S-dp-FIH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4xI-vA-9Kz"/>
+                <constraint firstItem="4Oj-oB-uOX" firstAttribute="top" secondItem="5tu-Pk-p1p" secondAttribute="bottom" constant="60" id="DIw-pH-PNr"/>
+                <constraint firstItem="5tu-Pk-p1p" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="FD3-nQ-dxu"/>
+                <constraint firstItem="B5S-dp-FIH" firstAttribute="top" secondItem="uz7-F7-YHi" secondAttribute="bottom" constant="35" id="TLI-xi-rhL"/>
+                <constraint firstItem="5tu-Pk-p1p" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VA5-yw-sqn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uz7-F7-YHi" secondAttribute="trailing" constant="20" id="Wbx-Ez-Pwa"/>
+                <constraint firstItem="uz7-F7-YHi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="YAN-n7-dfk"/>
+                <constraint firstItem="uz7-F7-YHi" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="aU2-SO-EVF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4Oj-oB-uOX" secondAttribute="trailing" constant="40" id="fxI-vb-nsw"/>
+                <constraint firstItem="uz7-F7-YHi" firstAttribute="top" secondItem="4Oj-oB-uOX" secondAttribute="bottom" constant="43" id="gpT-B1-VgY"/>
+                <constraint firstItem="4Oj-oB-uOX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="s6T-lr-tIo"/>
+                <constraint firstItem="4Oj-oB-uOX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="tMz-ys-a8K"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo" width="300" height="86"/>
+    </resources>
+</document>

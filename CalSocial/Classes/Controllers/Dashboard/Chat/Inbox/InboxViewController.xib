@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InboxViewController" customModule="Bizze" customModuleProvider="target">
+            <connections>
+                <outlet property="inboxTableView" destination="lYw-5Y-Qdg" id="4tK-qC-4qc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lYw-5Y-Qdg">
+                    <rect key="frame" x="0.0" y="44" width="414" height="853"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Qzz-IP-aRF"/>
+                        <outlet property="delegate" destination="-1" id="9aw-9f-9Z3"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wio-o8-67z" customClass="MBButton" customModule="Bizze" customModuleProvider="target">
+                    <rect key="frame" x="177" y="832" width="60" height="60"/>
+                    <color key="backgroundColor" red="1" green="0.76166373489999994" blue="0.04396914691" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="Zlp-gx-QYh"/>
+                        <constraint firstAttribute="height" constant="60" id="bZS-VY-P6I"/>
+                    </constraints>
+                    <state key="normal" image="create-event"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="createEventButtonTapped:" destination="-1" eventType="touchUpInside" id="ZlJ-Nq-zbN"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="lYw-5Y-Qdg" secondAttribute="bottom" constant="-35" id="7JY-vE-fEN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Wio-o8-67z" secondAttribute="bottom" constant="-30" id="9Ec-d9-ovC"/>
+                <constraint firstItem="lYw-5Y-Qdg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Abu-TZ-OFO"/>
+                <constraint firstItem="Wio-o8-67z" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Bul-Zt-o7C"/>
+                <constraint firstItem="lYw-5Y-Qdg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="lm8-Of-pPF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lYw-5Y-Qdg" secondAttribute="trailing" id="yqk-fd-vZb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="create-event" width="25" height="24"/>
+    </resources>
+</document>

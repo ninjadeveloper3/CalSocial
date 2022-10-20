@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Muli-Regular.ttf">
+            <string>Muli-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="131" id="KGk-i7-Jjw" customClass="MyUserTableViewCell" customModule="Bizze" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="415" height="226"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="415" height="226"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="mPC-Db-RMa" customClass="BUIImageView" customModule="Bizze" customModuleProvider="target">
+                        <rect key="frame" x="33" y="26" width="75" height="75"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="UQg-lN-9pt"/>
+                            <constraint firstAttribute="height" constant="75" id="WJP-E6-43T"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="18"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Attending MIT, accessing the nuclear shuttle dismount for Phd project.  Other than that, find me in the gym." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3b-1h-wNI">
+                        <rect key="frame" x="26" y="163" width="363" height="35.5"/>
+                        <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="14"/>
+                        <color key="textColor" red="0.31761622430000003" green="0.31766676900000002" blue="0.31760513779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IdO-QK-hbu">
+                        <rect key="frame" x="22" y="223.5" width="371" height="0.5"/>
+                        <color key="backgroundColor" red="0.76462173460000005" green="0.764754355" blue="0.76461333040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="hbP-RW-gWb"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Las Vegas" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWZ-kI-54U">
+                        <rect key="frame" x="34" y="104" width="321" height="18.5"/>
+                        <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="14"/>
+                        <color key="textColor" red="0.31761622430000003" green="0.31766676900000002" blue="0.31760513779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fa5-ZX-ZQS">
+                        <rect key="frame" x="0.0" y="137.5" width="415" height="0.5"/>
+                        <color key="backgroundColor" red="0.76462173460000005" green="0.764754355" blue="0.76461333040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="six-br-qw1"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Michael Bettersworth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6EC-08-zTv">
+                        <rect key="frame" x="140" y="34" width="194.5" height="22"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                        <color key="textColor" red="0.30756756660000001" green="0.50142008069999999" blue="0.59572786089999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BtN-PM-pxe" customClass="HMView" customModule="Bizze" customModuleProvider="target">
+                        <rect key="frame" x="33" y="26" width="75" height="75"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cj-Bh-dQf">
+                                <rect key="frame" x="26" y="24" width="23.5" height="27"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.30756756660000001" green="0.50142008069999999" blue="0.59572786089999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4cj-Bh-dQf" firstAttribute="centerX" secondItem="BtN-PM-pxe" secondAttribute="centerX" id="QA1-DE-rKe"/>
+                            <constraint firstItem="4cj-Bh-dQf" firstAttribute="centerY" secondItem="BtN-PM-pxe" secondAttribute="centerY" id="kg1-fC-giU"/>
+                            <constraint firstAttribute="width" constant="75" id="nsd-9h-0gO"/>
+                            <constraint firstAttribute="height" constant="75" id="rUC-sf-VeH"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="18"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="hWZ-kI-54U" secondAttribute="trailing" constant="60" id="0UA-K1-lPx"/>
+                    <constraint firstItem="mPC-Db-RMa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="33" id="45w-e0-S6V"/>
+                    <constraint firstAttribute="trailing" secondItem="R3b-1h-wNI" secondAttribute="trailing" constant="26" id="Adg-Ur-CCJ"/>
+                    <constraint firstAttribute="trailing" secondItem="IdO-QK-hbu" secondAttribute="trailing" constant="22" id="B93-hw-11F"/>
+                    <constraint firstAttribute="bottom" secondItem="IdO-QK-hbu" secondAttribute="bottom" constant="2" id="Fo1-lP-Fv8"/>
+                    <constraint firstItem="6EC-08-zTv" firstAttribute="leading" secondItem="mPC-Db-RMa" secondAttribute="trailing" constant="32" id="Je8-7Z-8ii"/>
+                    <constraint firstItem="IdO-QK-hbu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="22" id="KhN-j9-Sql"/>
+                    <constraint firstItem="IdO-QK-hbu" firstAttribute="top" secondItem="R3b-1h-wNI" secondAttribute="bottom" constant="25" id="Pkh-yB-CfR"/>
+                    <constraint firstItem="fa5-ZX-ZQS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="T2W-3N-7jW"/>
+                    <constraint firstItem="BtN-PM-pxe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="33" id="Xge-eW-NsW"/>
+                    <constraint firstItem="R3b-1h-wNI" firstAttribute="top" secondItem="fa5-ZX-ZQS" secondAttribute="bottom" constant="25" id="Y98-yn-Nel"/>
+                    <constraint firstItem="fa5-ZX-ZQS" firstAttribute="top" secondItem="hWZ-kI-54U" secondAttribute="bottom" constant="15" id="fYL-7e-VhW"/>
+                    <constraint firstAttribute="trailing" secondItem="fa5-ZX-ZQS" secondAttribute="trailing" id="gAg-9Q-ia5"/>
+                    <constraint firstItem="hWZ-kI-54U" firstAttribute="top" secondItem="mPC-Db-RMa" secondAttribute="bottom" constant="3" id="l44-jW-bmH"/>
+                    <constraint firstItem="mPC-Db-RMa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="26" id="lIM-Aw-lCf"/>
+                    <constraint firstItem="6EC-08-zTv" firstAttribute="top" secondItem="mPC-Db-RMa" secondAttribute="top" constant="8" id="mRb-X7-Ovf"/>
+                    <constraint firstItem="R3b-1h-wNI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="26" id="sIG-61-0q1"/>
+                    <constraint firstItem="hWZ-kI-54U" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="34" id="w2w-tl-vEo"/>
+                    <constraint firstItem="BtN-PM-pxe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="26" id="zis-zh-u2m"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="address" destination="hWZ-kI-54U" id="gXh-ub-hpI"/>
+                <outlet property="bio" destination="R3b-1h-wNI" id="kLf-1b-ra6"/>
+                <outlet property="emptyImageView" destination="BtN-PM-pxe" id="Kic-Rc-sEY"/>
+                <outlet property="fullName" destination="6EC-08-zTv" id="Fz0-iz-rIA"/>
+                <outlet property="imagePlaceholderName" destination="4cj-Bh-dQf" id="3O7-ad-26r"/>
+                <outlet property="profileImage" destination="mPC-Db-RMa" id="bVN-tx-Rft"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="159.70982142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="image1" width="108" height="108"/>
+    </resources>
+</document>

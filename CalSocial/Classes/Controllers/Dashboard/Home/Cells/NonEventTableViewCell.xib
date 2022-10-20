@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Muli-Regular.ttf">
+            <string>Muli-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="88" id="KGk-i7-Jjw" customClass="NonEventTableViewCell" customModule="Bizze" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="82.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wdb-gn-vuB" customClass="HMView" customModule="Bizze" customModuleProvider="target">
+                        <rect key="frame" x="20" y="5" width="280" height="66"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="6:00PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIc-t2-O8S">
+                                <rect key="frame" x="8" y="8" width="43" height="22"/>
+                                <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title of this Event" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4rZ-8h-1CM">
+                                <rect key="frame" x="71" y="23" width="199" height="20"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="8:00PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eM5-Ir-Bew">
+                                <rect key="frame" x="8" y="36" width="43" height="22"/>
+                                <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="TEr-Mi-hMc">
+                                <rect key="frame" x="8" y="33" width="43" height="0.5"/>
+                                <color key="backgroundColor" red="0.85032115539999997" green="0.85032115539999997" blue="0.85032115539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="KbS-zp-8Ff"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="iCal" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJh-JX-lsh">
+                                <rect key="frame" x="251.5" y="4" width="18" height="13"/>
+                                <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="10"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Yk-Lx-cUv">
+                                <rect key="frame" x="8" y="26" width="38" height="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3t0-en-QNz">
+                                <rect key="frame" x="59" y="12.5" width="1" height="41"/>
+                                <color key="backgroundColor" red="0.69405567646026611" green="0.69415730237960815" blue="0.69403344392776489" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="Hd6-Dt-BtB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96068006753921509" green="0.96084433794021606" blue="0.96066969633102417" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="eM5-Ir-Bew" secondAttribute="bottom" constant="8" id="1mi-wx-sHu"/>
+                            <constraint firstItem="0Yk-Lx-cUv" firstAttribute="leading" secondItem="wdb-gn-vuB" secondAttribute="leading" constant="8" id="43X-vD-HLG"/>
+                            <constraint firstItem="3t0-en-QNz" firstAttribute="centerY" secondItem="4rZ-8h-1CM" secondAttribute="centerY" id="8Dv-5Z-pMR"/>
+                            <constraint firstItem="4rZ-8h-1CM" firstAttribute="leading" secondItem="3t0-en-QNz" secondAttribute="trailing" constant="11" id="9oV-8S-Bqy"/>
+                            <constraint firstAttribute="bottom" secondItem="4rZ-8h-1CM" secondAttribute="bottom" constant="23" id="GjQ-a6-9ft"/>
+                            <constraint firstItem="TEr-Mi-hMc" firstAttribute="leading" secondItem="wdb-gn-vuB" secondAttribute="leading" constant="8" id="Hgw-nu-izU"/>
+                            <constraint firstAttribute="bottom" secondItem="3t0-en-QNz" secondAttribute="bottom" constant="12.5" id="UPS-cO-BaK"/>
+                            <constraint firstItem="TEr-Mi-hMc" firstAttribute="trailing" secondItem="dIc-t2-O8S" secondAttribute="trailing" id="WU1-il-bFr"/>
+                            <constraint firstItem="nJh-JX-lsh" firstAttribute="top" secondItem="wdb-gn-vuB" secondAttribute="top" constant="4" id="XjH-YF-06f"/>
+                            <constraint firstItem="4rZ-8h-1CM" firstAttribute="leading" secondItem="dIc-t2-O8S" secondAttribute="trailing" constant="20" id="YKg-pz-ifP"/>
+                            <constraint firstItem="dIc-t2-O8S" firstAttribute="top" secondItem="wdb-gn-vuB" secondAttribute="top" constant="8" id="Zsk-rH-Pus"/>
+                            <constraint firstItem="0Yk-Lx-cUv" firstAttribute="centerY" secondItem="4rZ-8h-1CM" secondAttribute="centerY" id="aTs-fn-jgc"/>
+                            <constraint firstAttribute="trailing" secondItem="nJh-JX-lsh" secondAttribute="trailing" constant="10.5" id="bA0-DL-aI1"/>
+                            <constraint firstItem="TEr-Mi-hMc" firstAttribute="top" secondItem="dIc-t2-O8S" secondAttribute="bottom" constant="3" id="bTN-hF-4he"/>
+                            <constraint firstAttribute="trailing" secondItem="4rZ-8h-1CM" secondAttribute="trailing" constant="10" id="dNp-hy-2n6"/>
+                            <constraint firstItem="3t0-en-QNz" firstAttribute="centerY" secondItem="4rZ-8h-1CM" secondAttribute="centerY" id="eM8-KK-CEy"/>
+                            <constraint firstItem="3t0-en-QNz" firstAttribute="top" secondItem="wdb-gn-vuB" secondAttribute="top" constant="12.5" id="jms-qS-eu0"/>
+                            <constraint firstItem="dIc-t2-O8S" firstAttribute="leading" secondItem="wdb-gn-vuB" secondAttribute="leading" constant="8" id="lg4-od-DRV"/>
+                            <constraint firstItem="eM5-Ir-Bew" firstAttribute="leading" secondItem="wdb-gn-vuB" secondAttribute="leading" constant="8" id="uXv-Zh-2oZ"/>
+                            <constraint firstItem="TEr-Mi-hMc" firstAttribute="centerY" secondItem="wdb-gn-vuB" secondAttribute="centerY" id="ww9-9Q-gZk"/>
+                            <constraint firstItem="4rZ-8h-1CM" firstAttribute="top" secondItem="wdb-gn-vuB" secondAttribute="top" constant="23" id="xi8-Ab-aV1"/>
+                            <constraint firstItem="eM5-Ir-Bew" firstAttribute="top" secondItem="TEr-Mi-hMc" secondAttribute="bottom" constant="2.5" id="ya4-Wv-jWd"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="-4" height="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wdb-gn-vuB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="JQx-k1-Ygc"/>
+                    <constraint firstAttribute="trailing" secondItem="wdb-gn-vuB" secondAttribute="trailing" constant="20" id="Qx3-lm-Yll"/>
+                    <constraint firstItem="wdb-gn-vuB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="RiA-oh-w8R"/>
+                    <constraint firstAttribute="bottom" secondItem="wdb-gn-vuB" secondAttribute="bottom" constant="11.5" id="Sop-jq-8J1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="allDayView" destination="0Yk-Lx-cUv" id="zDb-Sm-FE0"/>
+                <outlet property="dividerView" destination="TEr-Mi-hMc" id="Wv4-FP-GyH"/>
+                <outlet property="endTimeLabel" destination="eM5-Ir-Bew" id="2jC-U1-D8V"/>
+                <outlet property="eventTitleLabel" destination="4rZ-8h-1CM" id="C1F-DX-iiH"/>
+                <outlet property="startTimeLabel" destination="dIc-t2-O8S" id="3If-HP-RAx"/>
+            </connections>
+            <point key="canvasLocation" x="34.782608695652179" y="37.165178571428569"/>
+        </tableViewCell>
+    </objects>
+</document>

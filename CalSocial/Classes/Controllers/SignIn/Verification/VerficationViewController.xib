@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Muli-Bold.ttf">
+            <string>Muli-Bold</string>
+        </array>
+        <array key="Muli-Regular.ttf">
+            <string>Muli-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VerficationViewController" customModule="Bizze" customModuleProvider="target">
+            <connections>
+                <outlet property="vCodeFiveTextField" destination="jMj-Io-m5v" id="M9h-et-mvB"/>
+                <outlet property="vCodeFourTextFIeld" destination="28D-zu-IO8" id="Ijq-GI-I9s"/>
+                <outlet property="vCodeOneTextField" destination="1sH-1c-i5v" id="hao-VC-Ejz"/>
+                <outlet property="vCodeSixTextField" destination="uQ9-u4-EKH" id="taY-QU-IN9"/>
+                <outlet property="vCodeThreeTextField" destination="Ayz-61-kga" id="k9f-r5-qCr"/>
+                <outlet property="vCodeTwoTextField" destination="1xB-U0-yHe" id="8ob-Vl-2ZR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="v6f-xv-GqZ">
+                    <rect key="frame" x="89" y="83" width="197" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="j36-OR-993"/>
+                        <constraint firstAttribute="width" constant="197" id="m05-vL-XuW"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter the verification code sent to your phone" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7y9-ku-B85">
+                    <rect key="frame" x="80" y="208.66666666666666" width="215" height="40.333333333333343"/>
+                    <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="16"/>
+                    <color key="textColor" red="0.2823261022567749" green="0.28237068653106689" blue="0.28231194615364075" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="H9d-B0-HUy">
+                    <rect key="frame" x="46" y="274" width="283" height="50"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="#" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1sH-1c-i5v" customClass="BUITextField" customModule="Bizze" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="44" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.42349135875701904" green="0.42355462908744812" blue="0.42347139120101929" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.40000000000000002"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="7.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="#" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1xB-U0-yHe" customClass="BUITextField" customModule="Bizze" customModuleProvider="target">
+                            <rect key="frame" x="48" y="0.0" width="43.666666666666657" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="7.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.28232610229999999" green="0.28237068650000002" blue="0.2823119462" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.40000000000000002"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="#" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ayz-61-kga" customClass="BUITextField" customModule="Bizze" customModuleProvider="target">
+                            <rect key="frame" x="95.666666666666657" y="0.0" width="44" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="7.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.40000000000000002"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.28232610229999999" green="0.28237068650000002" blue="0.2823119462" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="#" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="28D-zu-IO8" customClass="BUITextField" customModule="Bizze" customModuleProvider="target">
+                            <rect key="frame" x="143.66666666666666" y="0.0" width="43.666666666666657" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="7.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.40000000000000002"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.28232610229999999" green="0.28237068650000002" blue="0.2823119462" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="#" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jMj-Io-m5v" customClass="BUITextField" customModule="Bizze" customModuleProvider="target">
+                            <rect key="frame" x="191.33333333333334" y="0.0" width="44" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="7.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.40000000000000002"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.28232610229999999" green="0.28237068650000002" blue="0.2823119462" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="#" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uQ9-u4-EKH" customClass="BUITextField" customModule="Bizze" customModuleProvider="target">
+                            <rect key="frame" x="239.33333333333329" y="0.0" width="43.666666666666657" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="7.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.40000000000000002"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.28232610229999999" green="0.28237068650000002" blue="0.2823119462" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="jMj-Io-m5v" firstAttribute="width" secondItem="1sH-1c-i5v" secondAttribute="width" id="0Wp-Vr-uQS"/>
+                        <constraint firstItem="28D-zu-IO8" firstAttribute="width" secondItem="1sH-1c-i5v" secondAttribute="width" id="6TE-RY-ixj"/>
+                        <constraint firstItem="Ayz-61-kga" firstAttribute="width" secondItem="1sH-1c-i5v" secondAttribute="width" id="HWS-Xg-jtO"/>
+                        <constraint firstItem="uQ9-u4-EKH" firstAttribute="height" secondItem="1sH-1c-i5v" secondAttribute="height" id="LgW-cu-z31"/>
+                        <constraint firstAttribute="height" constant="50" id="Lhh-7F-3jh"/>
+                        <constraint firstItem="Ayz-61-kga" firstAttribute="height" secondItem="1sH-1c-i5v" secondAttribute="height" id="Q7W-kG-1YO"/>
+                        <constraint firstItem="jMj-Io-m5v" firstAttribute="height" secondItem="1sH-1c-i5v" secondAttribute="height" id="UM9-Eu-Ahz"/>
+                        <constraint firstItem="uQ9-u4-EKH" firstAttribute="width" secondItem="1sH-1c-i5v" secondAttribute="width" id="an4-R4-KFE"/>
+                        <constraint firstItem="1xB-U0-yHe" firstAttribute="width" secondItem="1sH-1c-i5v" secondAttribute="width" id="ncS-WX-sFJ"/>
+                        <constraint firstItem="28D-zu-IO8" firstAttribute="height" secondItem="1sH-1c-i5v" secondAttribute="height" id="ojs-6L-kAA"/>
+                        <constraint firstItem="1xB-U0-yHe" firstAttribute="height" secondItem="1sH-1c-i5v" secondAttribute="height" id="wvE-01-0fe"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VO2-wt-ebR" customClass="MBButton" customModule="Bizze" customModuleProvider="target">
+                    <rect key="frame" x="20" y="412" width="335" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.76078431369999999" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="OQG-8v-ehq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
+                    <state key="normal" title="Continue">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="contiuneButtonTapped:" destination="-1" eventType="touchUpInside" id="Y2v-cy-EBl"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zfk-om-wuK">
+                    <rect key="frame" x="37" y="356" width="301" height="12"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Didn't receive a code? " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nc7-kB-DWc">
+                            <rect key="frame" x="43.999999999999993" y="-6.3333333333333144" width="123.33333333333331" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="6Ud-z8-2dt"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="12"/>
+                            <color key="textColor" red="0.2823261022567749" green="0.28237068653106689" blue="0.28231194615364075" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resend Code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFc-Qx-HjZ">
+                            <rect key="frame" x="167.33333333333334" y="-6.3333333333333144" width="75" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="jGk-Eo-btq"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="12"/>
+                            <color key="textColor" red="0.31024876239999999" green="0.50069808959999995" blue="0.59679031370000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ntj-Pm-Bet">
+                            <rect key="frame" x="165" y="0.0" width="80" height="12"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="PoU-nF-6Li"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                            <connections>
+                                <action selector="resendTapped:" destination="-1" eventType="touchUpInside" id="oMp-tA-ek3"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="1PP-N8-VmH"/>
+                        <constraint firstAttribute="bottom" secondItem="ntj-Pm-Bet" secondAttribute="bottom" id="Mvc-6U-6SV"/>
+                        <constraint firstItem="lFc-Qx-HjZ" firstAttribute="centerY" secondItem="Nc7-kB-DWc" secondAttribute="centerY" id="N4o-aG-ThD"/>
+                        <constraint firstItem="lFc-Qx-HjZ" firstAttribute="leading" secondItem="Nc7-kB-DWc" secondAttribute="trailing" id="QfV-gL-uTQ"/>
+                        <constraint firstItem="lFc-Qx-HjZ" firstAttribute="centerY" secondItem="Zfk-om-wuK" secondAttribute="centerY" id="TYt-1B-BWc"/>
+                        <constraint firstItem="lFc-Qx-HjZ" firstAttribute="leading" secondItem="Nc7-kB-DWc" secondAttribute="trailing" id="fHw-4K-8Co"/>
+                        <constraint firstItem="Nc7-kB-DWc" firstAttribute="centerX" secondItem="Zfk-om-wuK" secondAttribute="centerX" constant="-45" id="gfZ-Uc-3Dg"/>
+                        <constraint firstItem="ntj-Pm-Bet" firstAttribute="top" secondItem="Zfk-om-wuK" secondAttribute="top" id="qJ6-cn-Ctn"/>
+                        <constraint firstItem="Nc7-kB-DWc" firstAttribute="centerY" secondItem="lFc-Qx-HjZ" secondAttribute="centerY" id="st1-2w-Wfs"/>
+                        <constraint firstItem="Nc7-kB-DWc" firstAttribute="centerY" secondItem="Zfk-om-wuK" secondAttribute="centerY" id="xwW-tQ-i9C"/>
+                        <constraint firstItem="ntj-Pm-Bet" firstAttribute="leading" secondItem="Nc7-kB-DWc" secondAttribute="trailing" constant="-2.3333333333333144" id="yzA-Jh-c3N"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="VO2-wt-ebR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="8pe-tT-dpE"/>
+                <constraint firstItem="Zfk-om-wuK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="37" id="KTi-u5-5qP"/>
+                <constraint firstItem="H9d-B0-HUy" firstAttribute="top" secondItem="7y9-ku-B85" secondAttribute="bottom" constant="25" id="NK6-hZ-ieW"/>
+                <constraint firstItem="7y9-ku-B85" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="UsS-La-0wv"/>
+                <constraint firstItem="v6f-xv-GqZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZEb-Wk-1Fp"/>
+                <constraint firstItem="VO2-wt-ebR" firstAttribute="top" secondItem="Zfk-om-wuK" secondAttribute="bottom" constant="44" id="dOj-Pg-ab5"/>
+                <constraint firstAttribute="trailing" secondItem="H9d-B0-HUy" secondAttribute="trailing" constant="46" id="eEC-Xe-gdx"/>
+                <constraint firstItem="v6f-xv-GqZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="39" id="hSm-mO-V3z"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7y9-ku-B85" secondAttribute="trailing" constant="80" id="i7F-4S-oBI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Zfk-om-wuK" secondAttribute="trailing" constant="37" id="kzh-53-yC0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VO2-wt-ebR" secondAttribute="trailing" constant="20" id="sXd-Ru-ff0"/>
+                <constraint firstItem="H9d-B0-HUy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="46" id="tvc-VL-EpK"/>
+                <constraint firstItem="Zfk-om-wuK" firstAttribute="top" secondItem="H9d-B0-HUy" secondAttribute="bottom" constant="32" id="u5N-uQ-Hsp"/>
+                <constraint firstItem="7y9-ku-B85" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="80" id="xoJ-MM-BVr"/>
+                <constraint firstItem="7y9-ku-B85" firstAttribute="top" secondItem="v6f-xv-GqZ" secondAttribute="bottom" constant="69.799999999999997" id="yvi-o3-fJx"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="47.200000000000003" y="41.379310344827587"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo" width="299.66665649414062" height="85.666664123535156"/>
+    </resources>
+</document>

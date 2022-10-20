@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Muli-Bold.ttf">
+            <string>Muli-Bold</string>
+        </array>
+        <array key="Muli-Regular.ttf">
+            <string>Muli-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventInviteDialogViewController" customModule="Bizze" customModuleProvider="target">
+            <connections>
+                <outlet property="eventPopupHeader" destination="8Ua-9n-u7a" id="eyB-oQ-9IS"/>
+                <outlet property="eventPopupSubTitle" destination="edw-J0-6zW" id="thM-eS-boB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PFV-B3-41u" customClass="HMView" customModule="Bizze" customModuleProvider="target">
+                    <rect key="frame" x="35" y="366.5" width="344" height="163"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event invite sent!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ua-9n-u7a">
+                            <rect key="frame" x="65" y="20" width="214.5" height="30.5"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="25"/>
+                            <color key="textColor" red="0.54099142550000001" green="0.65420395139999998" blue="0.71572709079999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expect to receive a notification when guests respond" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edw-J0-6zW">
+                            <rect key="frame" x="18" y="62.5" width="308" height="35.5"/>
+                            <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="14"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7V-Xu-E4B" customClass="MBButton" customModule="Bizze" customModuleProvider="target">
+                            <rect key="frame" x="96.5" y="113" width="151" height="33"/>
+                            <color key="backgroundColor" red="1" green="0.76166802639999998" blue="0.034142509100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="151" id="I3J-lV-b6q"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="16"/>
+                            <state key="normal" title="Okay">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="dimissScreen:" destination="-1" eventType="touchUpInside" id="1cM-w3-YYg"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="edw-J0-6zW" firstAttribute="leading" secondItem="PFV-B3-41u" secondAttribute="leading" constant="18" id="DGr-4d-z2b"/>
+                        <constraint firstItem="8Ua-9n-u7a" firstAttribute="top" secondItem="PFV-B3-41u" secondAttribute="top" constant="20" id="Der-iy-Ytv"/>
+                        <constraint firstAttribute="trailing" secondItem="edw-J0-6zW" secondAttribute="trailing" constant="18" id="F7p-5K-nAU"/>
+                        <constraint firstItem="i7V-Xu-E4B" firstAttribute="top" secondItem="edw-J0-6zW" secondAttribute="bottom" constant="15" id="Vi6-Pf-ibQ"/>
+                        <constraint firstItem="edw-J0-6zW" firstAttribute="top" secondItem="8Ua-9n-u7a" secondAttribute="bottom" constant="12" id="e8d-fs-T2v"/>
+                        <constraint firstItem="8Ua-9n-u7a" firstAttribute="centerX" secondItem="PFV-B3-41u" secondAttribute="centerX" id="eYX-23-AIs"/>
+                        <constraint firstItem="i7V-Xu-E4B" firstAttribute="centerX" secondItem="PFV-B3-41u" secondAttribute="centerX" id="r3U-Xn-OY3"/>
+                        <constraint firstAttribute="bottom" secondItem="i7V-Xu-E4B" secondAttribute="bottom" constant="17" id="zOF-VH-zZ9"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="0.0" height="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="PFV-B3-41u" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="35" id="GQD-jM-5xN"/>
+                <constraint firstItem="PFV-B3-41u" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iKr-wP-fNh"/>
+                <constraint firstItem="PFV-B3-41u" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="luV-gh-RdP"/>
+                <constraint firstAttribute="trailing" secondItem="PFV-B3-41u" secondAttribute="trailing" constant="35" id="q4w-oz-kjn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

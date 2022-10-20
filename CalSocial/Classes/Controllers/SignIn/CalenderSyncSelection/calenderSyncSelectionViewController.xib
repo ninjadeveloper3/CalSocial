@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+        <array key="Muli-Bold.ttf">
+            <string>Muli-Bold</string>
+        </array>
+        <array key="Muli-Regular.ttf">
+            <string>Muli-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="calenderSyncSelectionViewController" customModule="Bizze" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="hzz-cy-T64">
+                    <rect key="frame" x="113" y="74" width="188" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="BxP-tm-9ER"/>
+                        <constraint firstAttribute="width" constant="188" id="iQl-v4-514"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adding your calendar allows Bizee to find common availability between you and your hive" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIr-zk-9Dj">
+                    <rect key="frame" x="40" y="211" width="334" height="60.5"/>
+                    <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="16"/>
+                    <color key="textColor" red="0.2352643311" green="0.2353112996" blue="0.2352613509" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g0i-aK-Sib">
+                    <rect key="frame" x="0.0" y="283" width="414" height="330"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sus-DX-ccF">
+                            <rect key="frame" x="0.0" y="20" width="414" height="0.5"/>
+                            <color key="backgroundColor" red="0.85032115539999997" green="0.85032115539999997" blue="0.85032115539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="o3E-08-oNY"/>
+                            </constraints>
+                        </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iCal" translatesAutoresizingMaskIntoConstraints="NO" id="jd3-iw-rYv">
+                            <rect key="frame" x="20" y="32" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="VyB-kj-E2S"/>
+                                <constraint firstAttribute="height" constant="50" id="ih8-GR-qxp"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Apple iCal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iB5-cO-vvH">
+                            <rect key="frame" x="91" y="47" width="103.5" height="20"/>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tx3-p2-QBo">
+                            <rect key="frame" x="0.0" y="94.5" width="414" height="0.5"/>
+                            <color key="backgroundColor" red="0.85032115539999997" green="0.85032115539999997" blue="0.85032115539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="414" id="6lI-R8-O5H"/>
+                                <constraint firstAttribute="height" constant="0.5" id="IA8-QU-Hji"/>
+                            </constraints>
+                        </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Right-arrow-1" translatesAutoresizingMaskIntoConstraints="NO" id="8mb-s1-Cfz">
+                            <rect key="frame" x="386" y="49.5" width="8" height="13.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="13.800000000000001" id="YhP-Tl-89a"/>
+                                <constraint firstAttribute="width" constant="8" id="oAh-3q-yGT"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyR-7o-2MC">
+                            <rect key="frame" x="8" y="28.5" width="398" height="58"/>
+                            <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="16"/>
+                            <connections>
+                                <action selector="addButtonTapped:" destination="-1" eventType="touchUpInside" id="3Or-fo-sRn"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRw-wv-19a">
+                            <rect key="frame" x="170.5" y="130" width="73" height="28"/>
+                            <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="12"/>
+                            <state key="normal" title="Skip for now">
+                                <color key="titleColor" red="0.31024876239999999" green="0.50069808959999995" blue="0.59679031370000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="skipButtonTapped:" destination="-1" eventType="touchUpInside" id="SzC-vp-Id6"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="GRw-wv-19a" firstAttribute="centerX" secondItem="g0i-aK-Sib" secondAttribute="centerX" id="9ZZ-HO-ves"/>
+                        <constraint firstItem="iB5-cO-vvH" firstAttribute="centerY" secondItem="jd3-iw-rYv" secondAttribute="centerY" id="Agf-kQ-LIT"/>
+                        <constraint firstItem="tx3-p2-QBo" firstAttribute="top" secondItem="jd3-iw-rYv" secondAttribute="bottom" constant="12.5" id="IKN-tn-1Ov"/>
+                        <constraint firstItem="sus-DX-ccF" firstAttribute="leading" secondItem="g0i-aK-Sib" secondAttribute="leading" id="Oz2-gm-3Fa"/>
+                        <constraint firstItem="HyR-7o-2MC" firstAttribute="top" secondItem="sus-DX-ccF" secondAttribute="bottom" constant="8" id="RDN-A3-gMd"/>
+                        <constraint firstItem="8mb-s1-Cfz" firstAttribute="top" secondItem="sus-DX-ccF" secondAttribute="bottom" constant="29" id="RhA-gf-zMG"/>
+                        <constraint firstAttribute="trailing" secondItem="tx3-p2-QBo" secondAttribute="trailing" id="S50-qW-1sr"/>
+                        <constraint firstItem="GRw-wv-19a" firstAttribute="top" secondItem="tx3-p2-QBo" secondAttribute="bottom" constant="35" id="SnF-g2-ljL"/>
+                        <constraint firstItem="HyR-7o-2MC" firstAttribute="leading" secondItem="g0i-aK-Sib" secondAttribute="leading" constant="8" id="X7R-8J-sw6"/>
+                        <constraint firstAttribute="trailing" secondItem="HyR-7o-2MC" secondAttribute="trailing" constant="8" id="Xdp-MG-ihe"/>
+                        <constraint firstItem="tx3-p2-QBo" firstAttribute="top" secondItem="HyR-7o-2MC" secondAttribute="bottom" constant="8" id="b8a-2a-29T"/>
+                        <constraint firstItem="sus-DX-ccF" firstAttribute="top" secondItem="g0i-aK-Sib" secondAttribute="top" constant="20" id="bgY-UM-nS0"/>
+                        <constraint firstItem="jd3-iw-rYv" firstAttribute="leading" secondItem="g0i-aK-Sib" secondAttribute="leading" constant="20" id="dKM-yQ-6EO"/>
+                        <constraint firstItem="tx3-p2-QBo" firstAttribute="leading" secondItem="g0i-aK-Sib" secondAttribute="leading" id="ewZ-TA-BK7"/>
+                        <constraint firstItem="jd3-iw-rYv" firstAttribute="top" secondItem="sus-DX-ccF" secondAttribute="bottom" constant="11.5" id="kpr-an-iIK"/>
+                        <constraint firstItem="iB5-cO-vvH" firstAttribute="leading" secondItem="jd3-iw-rYv" secondAttribute="trailing" constant="21" id="mI6-30-mEf"/>
+                        <constraint firstAttribute="trailing" secondItem="sus-DX-ccF" secondAttribute="trailing" id="scR-2U-t2U"/>
+                        <constraint firstAttribute="trailing" secondItem="8mb-s1-Cfz" secondAttribute="trailing" constant="20" id="xaS-5e-E4c"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="g0i-aK-Sib" firstAttribute="centerX" secondItem="TIr-zk-9Dj" secondAttribute="centerX" id="7C5-Yh-6oD"/>
+                <constraint firstItem="hzz-cy-T64" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="J2s-LC-0IH"/>
+                <constraint firstItem="g0i-aK-Sib" firstAttribute="top" secondItem="TIr-zk-9Dj" secondAttribute="bottom" constant="11.5" id="NVO-ah-R7p"/>
+                <constraint firstItem="g0i-aK-Sib" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="RpW-sV-1qL"/>
+                <constraint firstItem="g0i-aK-Sib" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Srh-aM-rWH"/>
+                <constraint firstItem="g0i-aK-Sib" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="e77-2E-do9"/>
+                <constraint firstItem="TIr-zk-9Dj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="izp-Cj-pWc"/>
+                <constraint firstItem="hzz-cy-T64" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="onD-Py-EBD"/>
+                <constraint firstItem="TIr-zk-9Dj" firstAttribute="top" secondItem="hzz-cy-T64" secondAttribute="bottom" constant="66.799999999999997" id="yTz-2W-16b"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TIr-zk-9Dj" secondAttribute="trailing" constant="40" id="z1j-uC-x8q"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="79.710144927536234" y="39.508928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Right-arrow-1" width="8" height="14"/>
+        <image name="iCal" width="50" height="33"/>
+        <image name="logo" width="300" height="86"/>
+    </resources>
+</document>

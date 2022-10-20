@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Muli-Regular.ttf">
+            <string>Muli-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeUserCollectionViewCell" customModule="Bizze" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="85" height="96"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="85" height="96"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uvC-Ys-iQW">
+                        <rect key="frame" x="12.5" y="10" width="60" height="60"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="UnX-ei-tgU" customClass="BUIImageView" customModule="Bizze" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.76166373489999994" blue="0.04396914691" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="18.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pXL-HW-a0l" customClass="HMView" customModule="Bizze" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84G-JZ-ek4">
+                                        <rect key="frame" x="19.5" y="18" width="21.5" height="24.5"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.30756756660000001" green="0.50142008069999999" blue="0.59572786089999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="8yL-9l-D2H"/>
+                                    <constraint firstItem="84G-JZ-ek4" firstAttribute="centerX" secondItem="pXL-HW-a0l" secondAttribute="centerX" id="Y6o-qU-XjE"/>
+                                    <constraint firstAttribute="height" constant="60" id="cGP-wj-o4R"/>
+                                    <constraint firstItem="84G-JZ-ek4" firstAttribute="centerY" secondItem="pXL-HW-a0l" secondAttribute="centerY" id="pJO-7o-HhM"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="pXL-HW-a0l" secondAttribute="bottom" id="8mG-xz-Hrc"/>
+                            <constraint firstAttribute="height" constant="60" id="DZp-21-cKV"/>
+                            <constraint firstAttribute="bottom" secondItem="UnX-ei-tgU" secondAttribute="bottom" id="FqR-EC-QeL"/>
+                            <constraint firstAttribute="trailing" secondItem="UnX-ei-tgU" secondAttribute="trailing" id="HoG-J7-yPO"/>
+                            <constraint firstItem="pXL-HW-a0l" firstAttribute="top" secondItem="uvC-Ys-iQW" secondAttribute="top" id="IOs-c8-rtv"/>
+                            <constraint firstItem="pXL-HW-a0l" firstAttribute="leading" secondItem="uvC-Ys-iQW" secondAttribute="leading" id="Mxu-uq-P0I"/>
+                            <constraint firstAttribute="trailing" secondItem="pXL-HW-a0l" secondAttribute="trailing" id="Spr-9t-nz6"/>
+                            <constraint firstAttribute="width" constant="60" id="X9P-4Y-jvO"/>
+                            <constraint firstItem="UnX-ei-tgU" firstAttribute="leading" secondItem="uvC-Ys-iQW" secondAttribute="leading" id="hFg-Wt-URF"/>
+                            <constraint firstItem="UnX-ei-tgU" firstAttribute="top" secondItem="uvC-Ys-iQW" secondAttribute="top" id="q8t-Nf-qky"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swarm TitleSwarm Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29l-dn-I9h">
+                        <rect key="frame" x="3.5" y="78" width="78" height="13.5"/>
+                        <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="10"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="uvC-Ys-iQW" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Dcf-Bp-n4w"/>
+                <constraint firstAttribute="bottom" secondItem="29l-dn-I9h" secondAttribute="bottom" constant="4.5" id="Jc9-vk-LNa"/>
+                <constraint firstItem="uvC-Ys-iQW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="Odc-OU-ZWy"/>
+                <constraint firstItem="29l-dn-I9h" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="3.5" id="S4L-eI-KGk"/>
+                <constraint firstAttribute="trailing" secondItem="29l-dn-I9h" secondAttribute="trailing" constant="3.5" id="tKA-jZ-wqH"/>
+                <constraint firstItem="29l-dn-I9h" firstAttribute="top" secondItem="uvC-Ys-iQW" secondAttribute="bottom" constant="8" id="ulY-fJ-39B"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="85" height="95"/>
+            <connections>
+                <outlet property="emptyView" destination="pXL-HW-a0l" id="MCJ-lp-O4n"/>
+                <outlet property="emptyViewLabel" destination="84G-JZ-ek4" id="iPX-Mz-KUj"/>
+                <outlet property="nameLabel" destination="29l-dn-I9h" id="cas-0d-43J"/>
+                <outlet property="profileImageView" destination="UnX-ei-tgU" id="2Ie-j5-XeR"/>
+            </connections>
+            <point key="canvasLocation" x="131.15942028985509" y="127.23214285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="image1" width="108" height="108"/>
+    </resources>
+</document>

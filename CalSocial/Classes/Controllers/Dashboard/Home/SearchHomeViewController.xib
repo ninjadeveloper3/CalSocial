@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchHomeViewController" customModule="Bizze" customModuleProvider="target">
+            <connections>
+                <outlet property="clearCross" destination="8uB-zi-rBp" id="eYO-lE-csV"/>
+                <outlet property="inputTextField" destination="lGF-Ur-Za7" id="eWG-M1-twP"/>
+                <outlet property="tableView" destination="OU7-qd-7bS" id="2m3-e7-4hK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OU7-qd-7bS">
+                    <rect key="frame" x="0.0" y="65.5" width="414" height="796.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="JWo-4Y-rX7"/>
+                        <outlet property="delegate" destination="-1" id="eD3-Ww-9Sh"/>
+                    </connections>
+                </tableView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Search" translatesAutoresizingMaskIntoConstraints="NO" id="kV6-mM-CsI">
+                    <rect key="frame" x="40" y="20" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="cS1-VF-X0e"/>
+                        <constraint firstAttribute="width" constant="25" id="tQM-oC-hfn"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KGf-3u-6QI">
+                    <rect key="frame" x="0.0" y="65" width="414" height="0.5"/>
+                    <color key="backgroundColor" red="0.85032115539999997" green="0.85032115539999997" blue="0.85032115539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="sKd-kB-Qc9"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search for someone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lGF-Ur-Za7">
+                    <rect key="frame" x="85" y="12.5" width="281" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="7Ya-ZQ-YfK"/>
+                    </constraints>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="searchTextAction:" destination="-1" eventType="editingChanged" id="UJv-ri-cgQ"/>
+                    </connections>
+                </textField>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uB-zi-rBp">
+                    <rect key="frame" x="374" y="22.5" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="KWs-K2-68B"/>
+                        <constraint firstAttribute="width" constant="20" id="Q42-17-Dso"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="close-grey"/>
+                    <connections>
+                        <action selector="searchClearTapped:" destination="-1" eventType="touchUpInside" id="kWV-K1-sO9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="KGf-3u-6QI" secondAttribute="trailing" id="1OT-yo-Pgj"/>
+                <constraint firstItem="lGF-Ur-Za7" firstAttribute="centerY" secondItem="kV6-mM-CsI" secondAttribute="centerY" id="3Hx-OD-wuI"/>
+                <constraint firstItem="kV6-mM-CsI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="6B1-Dp-AYo"/>
+                <constraint firstItem="OU7-qd-7bS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7vc-Bi-sm2"/>
+                <constraint firstItem="KGf-3u-6QI" firstAttribute="top" secondItem="kV6-mM-CsI" secondAttribute="bottom" constant="20" id="ArH-j1-3e0"/>
+                <constraint firstItem="8uB-zi-rBp" firstAttribute="centerY" secondItem="lGF-Ur-Za7" secondAttribute="centerY" id="GtH-UM-Bvj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="OU7-qd-7bS" secondAttribute="bottom" id="OTd-qo-hjm"/>
+                <constraint firstAttribute="trailing" secondItem="8uB-zi-rBp" secondAttribute="trailing" constant="20" id="QCm-xA-92h"/>
+                <constraint firstItem="kV6-mM-CsI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="RBC-aT-0Ss"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OU7-qd-7bS" secondAttribute="trailing" id="bJQ-r7-DlS"/>
+                <constraint firstItem="KGf-3u-6QI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eF6-US-qVx"/>
+                <constraint firstItem="OU7-qd-7bS" firstAttribute="top" secondItem="KGf-3u-6QI" secondAttribute="bottom" id="kfw-UU-6gy"/>
+                <constraint firstItem="8uB-zi-rBp" firstAttribute="leading" secondItem="lGF-Ur-Za7" secondAttribute="trailing" constant="8" id="pRi-7u-Pey"/>
+                <constraint firstItem="lGF-Ur-Za7" firstAttribute="leading" secondItem="kV6-mM-CsI" secondAttribute="trailing" constant="20" id="pnn-aE-vMu"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="34.782608695652179" y="34.821428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Search" width="20" height="20"/>
+        <image name="close-grey" width="192" height="192"/>
+    </resources>
+</document>

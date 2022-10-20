@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Muli-Regular.ttf">
+            <string>Muli-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HiveConnectionsViewController" customModule="Bizze" customModuleProvider="target">
+            <connections>
+                <outlet property="inHiveSwitch" destination="QMt-pq-CIw" id="WKK-fz-r8x"/>
+                <outlet property="myHiveViewMember" destination="MmY-py-M7y" id="GTI-o8-GgV"/>
+                <outlet property="outHiveViewMember" destination="Z9z-6q-BT1" id="k9R-ng-zLa"/>
+                <outlet property="profileDetails" destination="if1-bD-rWg" id="hPq-rl-SVg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connections in your hive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOK-kq-pc6">
+                    <rect key="frame" x="24" y="76" width="382" height="25.5"/>
+                    <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="20"/>
+                    <color key="textColor" red="0.31761741638183594" green="0.3176666796207428" blue="0.31760179996490479" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can view other members in my hive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q29-AC-ebv">
+                    <rect key="frame" x="24" y="124.5" width="313" height="20.5"/>
+                    <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="16"/>
+                    <color key="textColor" red="0.31761741640000002" green="0.3176666796" blue="0.31760179999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QMt-pq-CIw">
+                    <rect key="frame" x="345" y="119.5" width="51" height="31"/>
+                    <connections>
+                        <action selector="inHiveSwitch:" destination="-1" eventType="valueChanged" id="ysx-ib-ITE"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Those not in your hive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9T-6o-boJ">
+                    <rect key="frame" x="24" y="200" width="202.5" height="25.5"/>
+                    <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="20"/>
+                    <color key="textColor" red="0.31761741640000002" green="0.3176666796" blue="0.31760179999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can invite me to an event" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jt-YM-3hS">
+                    <rect key="frame" x="24" y="249.5" width="313" height="20.5"/>
+                    <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="16"/>
+                    <color key="textColor" red="0.31761741640000002" green="0.3176666796" blue="0.31760179999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MmY-py-M7y">
+                    <rect key="frame" x="345" y="244.5" width="51" height="31"/>
+                    <connections>
+                        <action selector="outHiveViewMembers:" destination="-1" eventType="valueChanged" id="xZz-rf-Ks7"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can view details of my profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Yv-1h-Xsv">
+                    <rect key="frame" x="24" y="310" width="313" height="20.5"/>
+                    <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="16"/>
+                    <color key="textColor" red="0.31761741640000002" green="0.3176666796" blue="0.31760179999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="if1-bD-rWg">
+                    <rect key="frame" x="345" y="305" width="51" height="31"/>
+                    <connections>
+                        <action selector="outHiveProfileView:" destination="-1" eventType="valueChanged" id="W8O-cf-YWd"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can view other members in my hive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNs-lg-ncY">
+                    <rect key="frame" x="24" y="370.5" width="313" height="20.5"/>
+                    <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="16"/>
+                    <color key="textColor" red="0.31761741640000002" green="0.3176666796" blue="0.31760179999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Z9z-6q-BT1">
+                    <rect key="frame" x="345" y="365.5" width="51" height="31"/>
+                    <connections>
+                        <action selector="outHiveOtherMemberView:" destination="-1" eventType="valueChanged" id="Ih9-Ss-yzL"/>
+                    </connections>
+                </switch>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vNs-lg-ncY" firstAttribute="centerY" secondItem="Z9z-6q-BT1" secondAttribute="centerY" id="AYl-pq-fgS"/>
+                <constraint firstItem="6jt-YM-3hS" firstAttribute="top" secondItem="W9T-6o-boJ" secondAttribute="bottom" constant="24" id="FMZ-OL-xlZ"/>
+                <constraint firstItem="vNs-lg-ncY" firstAttribute="top" secondItem="5Yv-1h-Xsv" secondAttribute="bottom" constant="40" id="HWS-9G-Z2D"/>
+                <constraint firstItem="Q29-AC-ebv" firstAttribute="top" secondItem="KOK-kq-pc6" secondAttribute="bottom" constant="23" id="Hrp-QG-P4S"/>
+                <constraint firstItem="Q29-AC-ebv" firstAttribute="centerY" secondItem="QMt-pq-CIw" secondAttribute="centerY" id="Qvm-vj-UMB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="if1-bD-rWg" secondAttribute="trailing" constant="20" id="S1v-wD-gt0"/>
+                <constraint firstItem="if1-bD-rWg" firstAttribute="leading" secondItem="5Yv-1h-Xsv" secondAttribute="trailing" constant="8" id="SVg-TT-kky"/>
+                <constraint firstItem="KOK-kq-pc6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="TFU-9w-BbM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Z9z-6q-BT1" secondAttribute="trailing" constant="20" id="TV5-Yw-chV"/>
+                <constraint firstItem="W9T-6o-boJ" firstAttribute="leading" secondItem="KOK-kq-pc6" secondAttribute="leading" id="URB-my-X0C"/>
+                <constraint firstItem="6jt-YM-3hS" firstAttribute="centerY" secondItem="MmY-py-M7y" secondAttribute="centerY" id="Vm7-5w-WG3"/>
+                <constraint firstItem="5Yv-1h-Xsv" firstAttribute="leading" secondItem="6jt-YM-3hS" secondAttribute="leading" id="Zcy-SA-BQ4"/>
+                <constraint firstItem="W9T-6o-boJ" firstAttribute="top" secondItem="Q29-AC-ebv" secondAttribute="bottom" constant="55" id="dgk-Ag-zwJ"/>
+                <constraint firstItem="5Yv-1h-Xsv" firstAttribute="centerY" secondItem="if1-bD-rWg" secondAttribute="centerY" id="g84-iJ-BKS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KOK-kq-pc6" secondAttribute="trailing" constant="8" id="gX2-6d-kvO"/>
+                <constraint firstItem="Q29-AC-ebv" firstAttribute="leading" secondItem="KOK-kq-pc6" secondAttribute="leading" id="hPV-2I-JTK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MmY-py-M7y" secondAttribute="trailing" constant="20" id="jb9-wM-5gj"/>
+                <constraint firstItem="vNs-lg-ncY" firstAttribute="leading" secondItem="5Yv-1h-Xsv" secondAttribute="leading" id="jgn-ac-69s"/>
+                <constraint firstItem="5Yv-1h-Xsv" firstAttribute="top" secondItem="6jt-YM-3hS" secondAttribute="bottom" constant="40" id="jtI-QP-31I"/>
+                <constraint firstItem="MmY-py-M7y" firstAttribute="leading" secondItem="6jt-YM-3hS" secondAttribute="trailing" constant="8" id="lYG-Wp-vRa"/>
+                <constraint firstItem="QMt-pq-CIw" firstAttribute="leading" secondItem="Q29-AC-ebv" secondAttribute="trailing" constant="8" id="mve-Td-anv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QMt-pq-CIw" secondAttribute="trailing" constant="20" id="otU-1Y-dwT"/>
+                <constraint firstItem="6jt-YM-3hS" firstAttribute="leading" secondItem="W9T-6o-boJ" secondAttribute="leading" id="sRh-Ec-cne"/>
+                <constraint firstItem="KOK-kq-pc6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="ulc-A6-KjZ"/>
+                <constraint firstItem="Z9z-6q-BT1" firstAttribute="leading" secondItem="vNs-lg-ncY" secondAttribute="trailing" constant="8" id="zVK-Dt-NcX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
